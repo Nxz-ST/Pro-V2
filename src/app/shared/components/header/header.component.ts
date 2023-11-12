@@ -1,4 +1,4 @@
-import { Component, Injectable, Input, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { SidebarServiceService } from '../../services/sidebar-service.service';
 
 @Component({
