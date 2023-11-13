@@ -20,6 +20,14 @@ const routes: Routes = [
         loadChildren: () => import('../proyecto/proyecto.module').then(m => m.ProyectoModule),
       },
       {
+        path:'gestionar-proyecto',
+        loadChildren: () => import('../gestionar-proyecto/gestionar-proyecto.module').then(m => m.GestionarProyectoModule),
+      },
+      {
+        path:'gestionar-sesiones',
+        loadChildren: () => import('../gestionar-sesiones/gestionar-sesiones.module').then(m => m.GestionarSesionesModule),
+      },
+      {
         path:'**',
         redirectTo:'welcome'
       },
